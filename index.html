@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="">
+        <img
+          src="https://themerec.com/item/appvim/demo/assets/images/logo-color.svg"
+          alt=""
+          class="navbar__logo"
+        />
+      </a>
+      <div class="navbar__nav">
+        <ul class="navbar__nav__list">
+          <li class="navbar__nav__list--item"><a href="">Home</a></li>
+          <li class="navbar__nav__list--item"><a href="">Features</a></li>
+          <li class="navbar__nav__list--item details-li">
+            <a href="">Details<i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="">Team Conditions</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Article Details</a></li>
+            </ul>
+          </li>
+          <li class="navbar__nav__list--item"><a href="">Previews</a></li>
+          <li class="navbar__nav__list--item"><a href="">Contact</a></li>
+        </ul>
+        <div class="navbar__nav__social">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <label for="nav" class="navbar__nav__icon"
+        ><i class="fas fa-bars"></i
+      ></label>
+      <input type="checkbox" id="nav" class="nav"  />
+      <div class="navbar__tablet">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="/home">Features</a></li>
+          <li class="navbar__tablet--dropdown">
+            <label for="drop">Details<i class="fas fa-sort-down"></i></label>
+            <input type="checkbox" id="drop" />
+            <ul>
+              <li><a href="">Team Conditions</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Article Details</a></li>
+            </ul>
+          </li>
+          <li><a href="">Previews</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End navbar -->
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header__left">
+        <p>LANDING PAGE</p>
+        <span class="header__left--text">MARKETERS</span>
+        <p>
+          For everyone interested in personal development, AppVim is the perfect
+          app Landing page to get real results fast
+        </p>
+        <div class="header__left__button">
+          <button class="btn">
+            <i class="fab fa-apple"></i>
+            <span>App Store</span>
+          </button>
+          <button class="btn">
+            <i class="fab fa-google-play"></i>
+            <span>Play Store</span>
+          </button>
+        </div>
+      </div>
+      <div class="header__right">
+        <img src="./images/hero-7.png" alt="" />
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Features -->
+    <div class="features">
+      <h2>FEATURES</h2>
+      <p>
+        AppVim was designed based on input from personal development coaches and
+        popular trainers so it offers all
+      </p>
+      <div class="features__options">
+        <label for="config" class="features__options--item active">
+          <i class="fas fa-cog"></i>
+          Configuring
+        </label>
+        <label for="tracking" class="features__options--item">
+          <i class="fas fa-binoculars"></i>
+          tracking
+        </label>
+        <label for="monitor" class="features__options--item">
+          <i class="fas fa-search"></i>
+          monitoring
+        </label>
+      </div>
+      <div class="container">
+        <input type="radio" id="config" name="slide" checked="checked" />
+        <div class="features__card">
+          <div class="features__card__item">
+            <div class="features__card__item--left">
+              <div class="features__card__item--body">
+                <div div class="text--wrapper">
+                  <h4>Fully Responsive</h4>
+                  <p>
+                    AppVim's based on Bootstrap Framework that makes theme
+                    perfectly responsive for all devices
+                  </p>
+                </div>
+                <div class="icon">
+                  <i class="far fa-compass"></i>
+                </div>
+              </div>
+              <div class="features__card__item--body">
+                <div div class="text--wrapper">
+                  <h4>Clean Code</h4>
+                  <p>
+                    Built on HTML5, CSS3, the code quality is really amazing in
+                    AppVim. Fully W3C validated.
+                  </p>
+                </div>
+                <div class="icon">
+                  <i class="far fa-file-code"></i>
+                </div>
+              </div>
+              <div class="features__card__item--body">
+                <div div class="text--wrapper">
+                  <h4>Working Contact Form</h4>
+                  <p>
+                    All the contact forms in AppVim are working. related PHP
+                    files are included in the purchase files
+                  </p>
+                </div>
+                <div class="icon">
+                  <i class="far fa-gem"></i>
+                </div>
+              </div>
+            </div>
+            <div class="features__card__item--mid">
+              <img src="./images/img1.png" alt="" />
+            </div>
+            <div class="features__card__item--right">
+              <div class="features__card__item--body">
+                <div class="icon">
+                  <i class="far fa-calendar-check"></i>
+                </div>
+                <div div class="text--wrapper">
+                  <h4>Browser Compatible</h4>
+                  <p>
+                    AppVim's tested on all major browsers, it work smoothly on
+                    all of them
+                  </p>
+                </div>
+              </div>
+              <div class="features__card__item--body">
+                <div class="icon">
+                  <i class="far fa-bookmark"></i>
+                </div>
+                <div div class="text--wrapper">
+                  <h4>Google Fonts</h4>
+                  <p>
+                    AppVim uses Google Fonts all through the demos -that gives
+                    you super flexibility
+                  </p>
+                </div>
+              </div>
+              <div class="features__card__item--body">
+                <div class="icon">
+                  <i class="fas fa-cube"></i>
+                </div>
+                <div div class="text--wrapper">
+                  <h4>Good Foundation</h4>
+                  <p>
+                    Get a solid foundation for your self development efforts.
+                    Try AppVim mobile app for any mobile platform
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="radio" id="tracking" name="slide" />
+
+        <div class="features__card card__reverse">
+          <div class="features__card__item">
+            <div class="features__card__item--mid">
+              <img src="./images/img2.png" alt="" />
+            </div>
+            <div class="features__card__item--left">
+              <div class="features__card__item--body">
+                <div class="icon">
+                  <i class="far fa-file-code"></i>
+                </div>
+                <div div class="text--wrapper">
+                  <h4>Clean Code</h4>
+                  <p>
+                    Built on HTML5, CSS3, the code quality is really amazing in
+                    AppVim. Fully W3C validated.
+                  </p>
+                </div>
+              </div>
+              <div class="features__card__item--body">
+                <div class="icon">
+                  <i class="far fa-gem"></i>
+                </div>
+                <div div class="text--wrapper">
+                  <h4>Working Contact Form</h4>
+                  <p>
+                    All the contact forms in AppVim are working. related PHP
+                    files are included in the purchase files
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="features__card__item--right">
+              <div class="features__card__item--body">
+                <div class="icon">
+                  <i class="far fa-bookmark"></i>
+                </div>
+                <div div class="text--wrapper">
+                  <h4>Google Fonts</h4>
+                  <p>
+                    AppVim uses Google Fonts all through the demos -that gives
+                    you super flexibility
+                  </p>
+                </div>
+              </div>
+              <div class="features__card__item--body">
+                <div class="icon">
+                  <i class="fas fa-cube"></i>
+                </div>
+                <div div class="text--wrapper">
+                  <h4>Good Foundation</h4>
+                  <p>
+                    Get a solid foundation for your self development efforts.
+                    Try AppVim mobile app for any mobile platform
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <input type="radio" id="monitor" name="slide" />
+        <div class="features__card card__reverse">
+          <div class="features__card__item">
+            <div class="features__card__item--left">
+              <div class="features__card__item--body">
+                <div class="icon">
+                  <i class="far fa-compass"></i>
+                </div>
+                <div div class="text--wrapper">
+                  <h4>Fully Responsive</h4>
+                  <p>
+                    AppVim's based on Bootstrap Framework that makes theme
+                    perfectly responsive for all devices
+                  </p>
+                </div>
+              </div>
+              <div class="features__card__item--body">
+                <div class="icon">
+                  <i class="far fa-file-code"></i>
+                </div>
+                <div div class="text--wrapper">
+                  <h4>Visual Editor</h4>
+                  <p>
+                    AppVim provides a well designed and ergonomic visual editor
+                    for you to edit your notes and input data
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="features__card__item--right">
+              <div class="features__card__item--body">
+                <div class="icon">
+                  <i class="far fa-calendar-check"></i>
+                </div>
+                <div div class="text--wrapper">
+                  <h4>Browser Compatible</h4>
+                  <p>
+                    AppVim's tested on all major browsers, it work smoothly on
+                    all of them
+                  </p>
+                </div>
+              </div>
+              <div class="features__card__item--body">
+                <div class="icon">
+                  <i class="far fa-bookmark"></i>
+                </div>
+                <div div class="text--wrapper">
+                  <h4>Easy Reading</h4>
+                  <p>
+                    Reading focus mode for long form articles, ebooks and other
+                    materials which involve large text areas
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="features__card__item--mid">
+              <img src="./images/img1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Features -->
+    <!-- Details -->
+    <div class="details">
+      <div class="details--item">
+        <div class="details--item--img details-img1">
+          <img src="./images/detail1.png" alt="" />
+        </div>
+        <div class="details--item__content details-content1">
+          <h6>Goals Setting</h6>
+          <p>
+            AppVim can easily help you track your personal development evolution
+            if you take the time to properly setup your goals at the beginning
+            of the training process. Check out the details
+          </p>
+          <button>LIGHT BOX</button>
+        </div>
+      </div>
+      <div class="details--item">
+        <div class="details--item--img details-img2">
+          <img src="./images/detail2.png" alt="" />
+        </div>
+        <div class="details--item__content details-content2">
+          <h6>Goals Setting</h6>
+          <p>
+            AppVim can easily help you track your personal development evolution
+            if you take the time to properly setup your goals at the beginning
+            of the training process. Check out the details
+          </p>
+          <button>LIGHT BOX</button>
+        </div>
+      </div>
+    </div>
+    <!-- End details -->
+    <!-- Slider -->
+    <div class="slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/sli1.png" alt="" /></div>
+          <div class="swiper-slide"><img src="./images/sli2.png" alt="" /></div>
+          <div class="swiper-slide"><img src="./images/sli3.png" alt="" /></div>
+          <div class="swiper-slide"><img src="./images/sli4.png" alt="" /></div>
+          <div class="swiper-slide"><img src="./images/sli5.png" alt="" /></div>
+          <div class="swiper-slide"><img src="./images/sli6.png" alt="" /></div>
+          <div class="swiper-slide"><img src="./images/sli7.png" alt="" /></div>
+          <div class="swiper-slide"><img src="./images/sli8.png" alt="" /></div>
+          <div class="swiper-slide"><img src="./images/sli9.png" alt="" /></div>
+          <div class="swiper-slide">
+            <img src="./images/sli10.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- End Slider -->
+    <!-- Features v3 -->
+    <div class="features_v3">
+      <div class="features_v3__wrapper">
+        <div class="features_v3__wrapper--item features-1">
+          <i class="fas fa-code"></i>
+          <h6>Goals Tracking</h6>
+          <p>
+            AppVim personal development mobile app will help you track your
+            goals and offer suggestions on improvements
+          </p>
+        </div>
+        <div class="features_v3__wrapper--item features-2">
+          <i class="far fa-compass"></i>
+          <h6>Time Monitoring</h6>
+          <p>
+            Stop wasting time while doing things which are not extremely
+            important for your career start to focus
+          </p>
+        </div>
+        <div class="features_v3__wrapper--item features-3">
+          <i class="far fa-gem"></i>
+          <h6>Reporting Tools</h6>
+          <p>
+            Get detailed reports about your development using the reporting
+            panel. The data is stored for evaluation
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Features v3 -->
+
+    <!-- Preview -->
+    <div class="preview">
+      <div class="preview__top">
+        <img src="./images/preview_phone.png" alt="" />
+      </div>
+      <div class="preview__video">
+        <div class="preview__video--popup">
+          <div class="video" id="video_ifr">
+            <iframe
+              src="https://www.youtube.com/embed/vTJdVE_gjI0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <span></span>
+          </div>
+          <img src="./images/img-video.jpg" alt="" />
+          <span class="preview__video--popup--playbtn">
+            <i class="fas fa-play"></i>
+          </span>
+        </div>
+      </div>
+      <div class="preview__area">
+        <div class="swipper--preview">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>
+                I love using AppVim for my personal development needs. It meets
+                all my requirements and it actually helps a lot with focusing
+                skills.
+              </p>
+              <h5>Rick Yellowville</h5>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                After trying out a large number of personal coaching apps I
+                decided to give AppVim a try and what a wonderful surprise it
+                was
+              </p>
+              <h5>Jay Frisco</h5>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                I love using AppVim for my personal development needs. It meets
+                all my requirements and it actually helps a lot with focusing
+                skills.
+              </p>
+              <h5>Lynda Marquez</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Preview -->
+    <!-- info -->
+    <div class="info">
+      <div class="info__user">
+        <div class="info__user--counter">
+          <div class="info__user--counter--cell">
+            <p>831</p>
+            <span>Downloads</span>
+          </div>
+          <div class="info__user--counter--cell">
+            <p>185</p>
+            <span>Happy Users</span>
+          </div>
+          <div class="info__user--counter--cell">
+            <p>259</p>
+            <span>Good Reviews</span>
+          </div>
+        </div>
+        <p class="info-p">
+          Download AppVim for all mobile devices and platforms to begin
+          improving your personal development skills
+        </p>
+        <div class="info__user--btn">
+          <button>
+            <i class="fab fa-apple"></i>
+            <span>App Store</span>
+          </button>
+          <button>
+            <i class="fab fa-google-play"></i>
+            <span>Play Store</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Info -->
+
+    <!-- more -->
+    <div class="more">
+      <h5>MORE APPS.</h5>
+      <p class="more__title">
+        We are specialized in developing mobile apps which help people do
+        amazing things using their smartphones on all platforms
+      </p>
+      <div class="more__items">
+        <div class="more__items--item more-1">
+          <img src="./images/more1.jpg" alt="" />
+          <p class="more__items--item--title">Fitness App</p>
+          <p>
+            The Fitness App will help you get in shape with the help of
+            carefully planned exercises designed by gym
+          </p>
+          <div class="more__items--item--icon">
+            <i class="fab fa-android"></i>
+            <i class="fab fa-apple"></i>
+          </div>
+        </div>
+        <div class="more__items--item more-2">
+          <img src="./images/more2.jpg" alt="" />
+          <p class="more__items--item--title">Fitness App</p>
+          <p>
+            The Fitness App will help you get in shape with the help of
+            carefully planned exercises designed by gym
+          </p>
+          <div class="more__items--item--icon">
+            <i class="fab fa-android"></i>
+            <i class="fab fa-apple"></i>
+          </div>
+        </div>
+        <div class="more__items--item more-3">
+          <img src="./images/more4.jpg" alt="" />
+          <p class="more__items--item--title">Fitness App</p>
+          <p>
+            The Fitness App will help you get in shape with the help of
+            carefully planned exercises designed by gym
+          </p>
+          <div class="more__items--item--icon">
+            <i class="fab fa-android"></i>
+            <i class="fab fa-apple"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End more -->
+
+    <!-- Contact -->
+    <div class="contact">
+      <h5>Contact</h5>
+      <p>Don't hesitate to give us a call or send us a contact form message</p>
+      <p>
+        <i class="fas fa-map-marker-alt"></i>
+        99 Saraha Area, San Francisco, CA 94043, US
+        <span class="br"></span>
+        <i class="fas fa-phone"></i>
+        <span>+000 123456789</span>
+        <i class="fas fa-envelope"></i>
+        <span>nguyenson7620000@gmail.com</span>
+      </p>
+      <div class="contact__right">
+        <img src="./images/contact.svg" alt="" />
+        <form action="" class="contact__right__form">
+          <div class="contact__right__form__input">
+            <input placeholder="input" type="text" id="name" />
+            <label for="name">Name</label>
+          </div>
+          <div class="contact__right__form__input">
+            <input placeholder="input" type="text" id="email" />
+            <label for="email">Email</label>
+          </div>
+          <div class="contact__right__form__input textarea">
+            <textarea name="" id="" placeholder="x"></textarea>
+            <label for="message">Your message</label>
+          </div>
+          <div class="contact__right__form__checkbox">
+            <input type="checkbox" name="" id="" />
+            <span
+              >I have read and agree to stated conditions in
+              <a href=""> Privacy Policy</a> and
+              <a href="">Terms Conditions</a></span
+            >
+          </div>
+          <button type="submit">SUBMIT MESSAGE</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- End contact -->
+
+    <!-- Footer -->
+    <svg
+      class="footer-frame"
+      data-name="Layer 2"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+      viewBox="0 0 1920 79"
+    >
+      <defs>
+        <style>
+          .cls-2 {
+            fill: #306be4;
+          }
+        </style>
+      </defs>
+      <title>footer-frame</title>
+      <path
+        class="cls-2"
+        d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z"
+        transform="translate(0 -0.188)"
+      ></path>
+    </svg>
+    <div class="footer">
+      <div class="footer__container">
+        <div class="footer__container__item">
+          <h5>About AppVim</h5>
+          <span
+            >We're passionate about designing and developing one of the best
+            marketing apps in the market</span
+          >
+        </div>
+        <div class="footer__container__item">
+          <h5>Value Links</h5>
+          <a href="">Terms & Conditions</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Article Details</a>
+        </div>
+        <div class="footer__container__item">
+          <h5>Contact Info</h5>
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>22 Sahara Street, CA, US</span>
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <span>contact@exaple.com</span>
+          </p>
+          <p>
+            <i class="fas fa-phone-alt"></i>
+            <span>+000 123456789</span>
+          </p>
+        </div>
+        <div class="footer__container__item">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <!-- Copyright -->
+    <div class="copyright">
+      <div class="copyright__title">
+        <p>Copyright © 2020 Template by ThemeREC</p>
+      </div>
+    </div>
+    <!-- End copyright -->
+  </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="./main.js"></script>
+</html>
