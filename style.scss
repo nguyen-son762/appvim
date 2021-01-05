@@ -767,40 +767,6 @@ button {
           z-index: 10;
         }
       }
-      .video {
-        display: none;
-        transition: all 0.2s linear;
-        &.active {
-          @extend %align-center;
-          position: fixed;
-          top: 0;
-          left: 0;
-          height: 100vh;
-          width: 100vw;
-          opacity: 1;
-          z-index: 10;
-          iframe{
-            @include desktop-lg{
-              width: 75% !important;
-              height: 70% !important; 
-            }
-          }
-          span {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.3);
-            z-index: 11;
-          }
-          iframe {
-            width: 50%;
-            height: 40rem;
-            z-index: 12;
-          }
-        }
-      }
     }
   }
   &__area {
@@ -841,6 +807,40 @@ button {
           margin-top: 1rem;
           font-size: 1.2rem;
         }
+      }
+    }
+  }
+}
+.video {
+  display: none;
+  transition: all 0.2s linear;
+  &.active {
+    position: fixed;
+    @extend %align-center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    z-index: 10;
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 11;
+      cursor: pointer;
+    }
+    iframe {
+      width: 50%;
+      height: 75%;
+      z-index: 12;
+      @include desktop-lg{
+        margin-top: 2rem;
+        width: 75% !important;
+        height: 70% !important; 
       }
     }
   }

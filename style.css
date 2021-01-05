@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.navbar__nav__social i, .header, .features__options--item, .features__card__item--body, .features__card__item--body .icon i, .features_v3__wrapper--item i, .preview__video--popup--playbtn i, .preview__video--popup .video.active, .preview__area, .preview__area .swipper--preview .swiper-slide, .more__items--item--icon i, .footer__container__item:last-child i {
+.navbar__nav__social i, .header, .features__options--item, .features__card__item--body, .features__card__item--body .icon i, .features_v3__wrapper--item i, .preview__video--popup--playbtn i, .preview__area, .preview__area .swipper--preview .swiper-slide, .video.active, .more__items--item--icon i, .footer__container__item:last-child i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -985,44 +985,6 @@ button {
   z-index: 10;
 }
 
-.preview__video--popup .video {
-  display: none;
-  transition: all 0.2s linear;
-}
-
-.preview__video--popup .video.active {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  opacity: 1;
-  z-index: 10;
-}
-
-@media screen and (max-width: 1199px) {
-  .preview__video--popup .video.active iframe {
-    width: 75% !important;
-    height: 70% !important;
-  }
-}
-
-.preview__video--popup .video.active span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 11;
-}
-
-.preview__video--popup .video.active iframe {
-  width: 50%;
-  height: 40rem;
-  z-index: 12;
-}
-
 .preview__area {
   max-width: 50%;
   position: relative;
@@ -1074,6 +1036,46 @@ button {
   color: #fff;
   margin-top: 1rem;
   font-size: 1.2rem;
+}
+
+.video {
+  display: none;
+  transition: all 0.2s linear;
+}
+
+.video.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  z-index: 10;
+}
+
+.video.active span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 11;
+  cursor: pointer;
+}
+
+.video.active iframe {
+  width: 50%;
+  height: 75%;
+  z-index: 12;
+}
+
+@media screen and (max-width: 1199px) {
+  .video.active iframe {
+    margin-top: 2rem;
+    width: 75% !important;
+    height: 70% !important;
+  }
 }
 
 @keyframes fadeOut {

@@ -79,6 +79,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
   popup.addEventListener("click", () => {
     video.classList.toggle("active");
   });
+  toggle.addEventListener('click',()=>{
+    video.classList.remove('active')
+  })
   /* GSAP */
   gsap.from(".header__left", {
     opacity: 0.5,
